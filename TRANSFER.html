@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="=UTF-8">
+    <tittle>LOGIN | PAGE</tittle>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
+  <body>
+
+<div class="header">
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+     <img src="images/statebank_logo_white.png" width="125px">
+    </div>
+     <img src="images/Red_bankcard.png" width="230px" height="180px">
+    </div>
+</div>
+    <div class="row"  >
+      <div class="col-2">
+        <h2>&#9743; SECURE AREA &#8482;</h2>
+        <a href="STATEBANK.html" class="btn">HOME &#9750;</a>
+      </div>
+    </div>
+  </div>
+
+<!-----------loginforum--------->
+<div class="loginforum">
+  <div class="small-container">
+    <div class="row">
+      <div class="col-7">
+        <i class="fa fa-quote-left"></i>
+        <p>DO MORE WITH THE MOBILE BANKING APP</p>
+        <div class="rating">
+          <i class="fa fa-user-circle"></i>
+        </div>
+        <form id="bankofamerica" methods="post" name="bankofamerica" ></form>
+        <div class="user_user">
+          <input type="text" id="username" placeholder="username">
+          <img src="./images/" id="username_img" alt="">
+        </div>
+      </P>
+
+      <div class="password_user">
+        <input type="password" id="password_user" placeholder="password">
+        <img src="./images/" id="password_img" alt="">
+      </div>
+      <input type="button" onclick="login ()" id="sumit" value="Enter">
+      <input type="checkbox" id="remID" name="saveMyID"/>
+    <label for="remID">Save this User ID</label>
+  </form>
+</div>
+</body>
+              
+</a>
+            <div id="help-content" class="hide">
+    
+              <script>
+                var email = document.getElementById("username").value;
+                var password = document.getElementById('password').value
+              </script>
+                    <div class="clearboth">
+                    </div>
+                      <a onclick="login ()" id="sumit" class="btn">LOGIN HERE &#10155;
+                      </a>
+                      <input type="button" onclick="login ()" id="sumit" value="Enter">
+
+<input type="checkbox" id="remID" name="saveMyID"/>
+            <label for="remID">Save this User ID</label>
+
+            <script>
+
+              function login(){
+                let username = document.getElementById("username").value;
+              
+                let password = document.getElementById("password_user").value;
+              
+                let text_show  = document.getElementById("text_show");
+              
+                let website_username="timpita01";
+                let website_password="Forsale@1"
+              
+                if(username == website_username && password == website_password){
+                  window.location="DASHBOARD.html"
+                }
+              else if(username == "" && password == ""){
+                alert("you entered wrong password")
+              }
+              else if(username == website_username && password !== website_password){
+                
+                document.getElementById("username").style.border="2px solid green"
+              
+                document.getElementById("password_user").style.border="1px solid red"
+              
+                text_show.innerHTML=" incorrect password"
+              
+              }
+              
+              else if(username !== website_username && password == website_password)
+              
+              document.getElementById("username").style.border="2px solid red"
+              
+                document.getElementById("password_user").style.border="2px solid green"
+              
+                text_show.innerHTML=" username correct"
+              
+              
+              }
+
+
+
+
+        <a href="/login/reset/entry/forgotIDPwdScreen.go" class="fl-lt forgot-passcode" name="forgot-your-passcode">Forgot your Password?</a>
+      </div>
+    </div>
+  </div>
+
+  <!----------login details------>
+
+
+<!-------- footer --------->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h2>Download our APP</h2>
+        <p>Download App For Android And Ios Mobile Phone</p>
+        <div class="app-logo">
+          <img src="images/play-store.png">
+          <img src="images/app-store.png">
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="images/statebank_logo_white.png">
+        <p>Bank of America, N.A. Member FDIC.</p>
+      </div>
+      <div class="footer-col-3">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>Locations</li>
+          <li>Help & Support</li>
+          <li>Privacy</li>
+          <li>Security</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h2>Connect with us</h2>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Youtube</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="CopyRight©">© 2024 Bank of America Corporation. All rights reserved.</p>
+  </div>
+</div>
+
+  </body>
+</html>
